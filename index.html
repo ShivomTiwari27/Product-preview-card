@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+ 
+  <style>
+     *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      font-family: 'montserrat';
+      font-weight: 500;
+      
+     }
+
+     body{
+      width: 100%;
+      background-color: hsl(30, 38%, 92%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+
+     .card{
+      width: 600px;
+      height: 447px;
+      background-color:hsl(0, 0%, 100%) ;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+     }
+
+     .card-image img{
+      width: 297px;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+     }
+
+     .card-detail{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      margin-right: 20px;
+      height: auto;
+     }
+
+     .card-detail h3{
+       color: hsl(228, 12%, 48%);
+       letter-spacing: 5px;
+       font-size: 12px;
+     }
+
+     .card-detail h1{
+      color: hsl(212, 21%, 14%) ;
+      font-family: 'Fraunces';
+     }
+
+     .card-detail p{
+      color:hsl(212, 21%, 14%);
+      font-weight: 500;
+     }
+
+     .card-detail .currency{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+     }
+
+     .card-detail .currency h1{
+      color: hsl(158, 36%, 37%);
+     }
+
+     .card-detail .currency small{
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+     }
+
+     .card-detail .cart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(158, 36%, 47%) ;
+      width: 100%;
+      height: 47px;
+      border-radius: 10px;
+      padding: 1rem;
+      gap: 10px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      
+     }
+
+     .cart p {
+      color: white;
+     }
+
+     .card-detail .cart:hover{
+      background-color: hsl(158, 36%, 23%);
+     }
+
+
+     .attribution { 
+     font-size: 11px;  
+     display: flex;
+     align-items: flex-end;
+     }
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+       display: flex;
+     align-items: flex-end;
+      }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="card">
+
+    <div class="card-image">
+        <img src="./image-product-desktop.jpg" alt="perfume bottle image">
+     </div>
+       <div class="card-detail">
+         <h3>Perfume</h3>
+
+         <h1>Gabrielle Essence Eau <br>De Parfum</h1>
+
+         <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+         Perfumer-Creator for the House of CHANEL.</p>
+
+          <div class="currency">
+            <h1>$149.99</h1>
+            <small>$169.99</small>
+            
+            </div>
+
+            <div class="cart">
+              <p>&#128722;Add to Cart</p>
+            </div>
+         
+        </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shivom Tiwari</a>
+  </div>
+</body>
+</html>
